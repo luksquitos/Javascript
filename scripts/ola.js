@@ -1,25 +1,20 @@
-
-// for(let i = 0;i < 11;i++){
-//     const varLocal = "Estou localmente";
-//     let varLocal2 = "Também estou localmente";
-//     var varGlobal = "Sou global";
-//     console.log(i);
-// }
-
-// console.log(varGlobal); //Funciona
-// // console.log(varLocal); //Não funciona
-// // console.log(varLocal2);//Não funciona
+// console.log(num);
+// num = 5; //undefined
+// var num = 5; //undefined
 
 
-//-----------------
+//-----
 
-let msg = "Olá";
-const outra_msg = "Mensagem";
+num = 5;
+console.log(num); //5
+//não foi declarado que tipo de variável é.
 
-if (msg){
-    console.log(msg); //Funciona
-    console.log(outra_msg); //Funciona
-    msg = "Outra coisa";
+
+//-----
+
+
+falaOi("lucas");
+
+function falaOi (nome){
+    console.log("OIII" + nome);
 }
-
-console.log(msg);
