@@ -1,4 +1,9 @@
-console.log("Oiiiiiiii");
+var idade = 20
+var maiorIdade = (idade >= 18);
 
-document.alert("Não quero codar na master. EU não sou louco");
+if (maiorIdade){
+    console.log("Maior de idade");
+} else {
+    console.log("Menor de idade");
+}
 
