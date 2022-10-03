@@ -1,20 +1,9 @@
-// console.log(num);
-// num = 5; //undefined
-// var num = 5; //undefined
+var array = ["verde", "vermelho", "rosa"];
 
+array.push('item1', 'item2'); //irá adicionar dois itens simultaneamente ao final.
+array.push(["preto", "branco", 23]) //irá adicionar um array com tais elementos
+array.pop() //remove o último item da lista
 
-//-----
+array["lucas"] = 23;
 
-num = 5;
-console.log(num); //5
-//não foi declarado que tipo de variável é.
-
-
-//-----
-
-
-falaOi("lucas");
-
-function falaOi (nome){
-    console.log("OIII" + nome);
-}
+console.log(array);
