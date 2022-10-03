@@ -1,11 +1,30 @@
-//arrays bi-dimensionais
+// Criando objetos.
 
-var sequences = [];
+//ex1
+let user1 = {
+    firstName: "Bob",
+    lastName: "Smith",
+    fullName: function() {
+       return `${this.firstName} ${this.lastName}`;
+    },
+ };
 
-var array1 = [1, 2, 3, 4];
-var array2 = [5, 4, 3, 2, 1];
+//ex2
 
-sequences.push(array1);
-sequences.push(array2);
+var user2 = {
+    "nome": {
+        "primeiroNome": "Lucas",
+        "segundoNome": "Martins",
+        fullname: function(){
+            return `$ {this.nome.primeiroNome} $ {this.nome.segundoNome}`;
+        }
+    },
+    "idade": 23,
+    "coresFavoritas": ["azul", "rosa"],
+}
 
-console.log(sequences[0][1]);// logs 2
+
+console.log(user1.nome); // "Lucas"
+console.log(user2.nome.primeiroNome); //"Lucas"
+console.log(user2.coresFavoritas); //['azul', 'rosa']
+console.log(user1.fullName());
