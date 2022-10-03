@@ -1,9 +1,11 @@
-var array = ["verde", "vermelho", "rosa"];
+//arrays bi-dimensionais
 
-array.push('item1', 'item2'); //irá adicionar dois itens simultaneamente ao final.
-array.push(["preto", "branco", 23]) //irá adicionar um array com tais elementos
-array.pop() //remove o último item da lista
+var sequences = [];
 
-array["lucas"] = 23;
+var array1 = [1, 2, 3, 4];
+var array2 = [5, 4, 3, 2, 1];
 
-console.log(array);
+sequences.push(array1);
+sequences.push(array2);
+
+console.log(sequences[0][1]);// logs 2
