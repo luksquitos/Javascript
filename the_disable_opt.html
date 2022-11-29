@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h1>O atributo 'disabled' para opcoes</h1>
+        <h2>Primeiro precisamos selecionar quais elementos queremos bloquear</h2>
+
+        <select id="name">
+            <option>Cachorro</option>
+            <option>Macaco</option>
+        </select>
+
+        <button onclick="myFunction()">Me clique</button>
+
+        <script>
+            function myFunction(){
+                document.getElementById("name").disabled = true;
+            }
+        </script>
+    </body>
+</html>

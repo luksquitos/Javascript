@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        
+        <h1>Aqui vou ensinar como usar o queryselectAll</h1>
+        <p>Usado para selecionar as tags que queremos</p>
+        <p>Essas tags possuem classes iguais</p>
+        <p>Não faz sentido usar isso em ids, porque a ideia dos ids é serem únicos</p>
+
+        <p class="exemplo">Copa</p>
+        <p class="exemplo">do</p>
+        <p class="exemplo">Mundo</p>
+
+        <script>
+            const listElements = document.querySelectorAll(".exemplo")
+            
+            for(let i = 0; i < listElements.length ; i++){
+                listElements[i].style.backgroundColor = "yellow"
+            }
+        </script>
+    </body>
+</html>
