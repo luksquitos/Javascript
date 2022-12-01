@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h1>botão que muda cor</h1>
+        <p>aperte o botão para mudar a cor do fundo</p>
+        <button id="botao" style="background-color: white">Me clique!</button>
+
+        <script>
+
+            // const button = document.getElementById("botao")
+            //     console.log("Script 2")
+            //     button.addEventListener("click", function(){
+            //         if(document.body.style.backgroundColor == "white"){
+            //             document.body.style.backgroundColor = "blue";
+            //         }else{
+            //             document.body.style.backgroundColor = "white";
+            //         }
+            //     })
+
+
+
+            document.addEventListener("DOMContentLoaded", function(){
+                const button = document.getElementById("botao")
+                console.log("Script executado")
+                button.addEventListener("click", function(){
+                    if(document.body.style.backgroundColor == "white"){
+                        console.log("if executado")
+                        document.body.style.backgroundColor = "blue";
+                    }else{
+                        document.body.style.backgroundColor = "white";
+                    }
+                })
+            })
+
+        </script>
+
+    </body>
+</html>
